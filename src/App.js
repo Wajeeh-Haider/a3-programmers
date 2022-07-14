@@ -10,7 +10,6 @@ import "boxicons/css/boxicons.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
-
 const App = () => {
   useEffect(() => {
     AOS.init();
