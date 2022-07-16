@@ -1,47 +1,56 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
 
-const About = () => {
+const About = ({ about, scrollToComponent }) => {
   return (
     <>
-      <section id="about" className="about">
+      <section ref={about} className="about">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>About Us</h2>
+            <h2 className="my-5">About Us</h2>
           </div>
 
           <div className="row content">
-            <div className="col-lg-6">
+            <div className="col-lg-6 p-4 p-lg-0 p-xl-0">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A3 Programmers is created to address the need for professional
+                IT Consulting, Web Development services and Software
+                Development. We enable you to become more efficient, streamline
+                your operations, and grow to your true potential with the power
+                of technology.
               </p>
               <ul>
                 <li>
-                  <i className="ri-check-double-line"></i> Ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat
+                  <i className="ri-check-double-line"></i> Our qualified staff
+                  has the knowledge and experience to tackle any problem.
                 </li>
                 <li>
-                  <i className="ri-check-double-line"></i> Duis aute irure dolor
-                  in reprehenderit in voluptate velit
+                  <i className="ri-check-double-line"></i> We’ll work directly
+                  with your company to completely understand your situation,
+                  make intelligent recommendations, and implement a customized
+                  solution to fit the needs of your business.
                 </li>
                 <li>
-                  <i className="ri-check-double-line"></i> Ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat
+                  <i className="ri-check-double-line"></i> Our vision is to
+                  create & maintain good customer relationship, adding in their
+                  satisfaction
                 </li>
               </ul>
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0">
+              <h3>Book a Call Now!</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Feel free to contact us for getting started with your project.
+                Our solution designing experts will guide you all the way.
               </p>
-              <a href="#" className="btn-learn-more">
-                Learn More
-              </a>
+              <Link
+                to=""
+                onClick={scrollToComponent}
+                className="btn-learn-more"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>

@@ -11,12 +11,11 @@ const Footer = () => {
               <div className="col-lg-6">
                 <h4>Join Our Newsletter</h4>
                 <p>
-                  Tamen quem nulla quae legam multos aute sint culpa legam
-                  noster magna
+                  Join Our Newsletter To Get Latest Updates From Us.
                 </p>
-                <form action="" method="post">
+                <form method="post">
                   <input type="email" name="email" />
-                  <input type="submit" value="Subscribe" />
+                  <input type="submit" placeholder="Subscribe" />
                 </form>
               </div>
             </div>
@@ -30,25 +29,6 @@ const Footer = () => {
               <span> A3 Programmers</span>
             </strong>
             . All Rights Reserved {date}
-          </div>
-          <div className="credits">
-            <div className="social-links mt-3">
-              <a href="#" className="twitter">
-                <i className="bx bxl-twitter"></i>
-              </a>
-              <a href="#" className="facebook">
-                <i className="bx bxl-facebook"></i>
-              </a>
-              <a href="#" className="instagram">
-                <i className="bx bxl-instagram"></i>
-              </a>
-              <a href="#" className="google-plus">
-                <i className="bx bxl-skype"></i>
-              </a>
-              <a href="#" className="linkedin">
-                <i className="bx bxl-linkedin"></i>
-              </a>
-            </div>
           </div>
         </div>
       </footer>

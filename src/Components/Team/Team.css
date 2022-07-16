@@ -8,8 +8,9 @@
 }
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 250px;
   border-radius: 50%;
+  align-items: center;
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
@@ -76,4 +77,8 @@
 }
 .team .member .social a + a {
   margin-left: 8px;
+}
+
+.cursor{
+  cursor: pointer;
 }

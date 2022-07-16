@@ -1,21 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Team.css";
-const Team = () => {
+const Team = ({ team }) => {
   return (
     <>
-      <section id="team" className="team section-bg">
+      <section ref={team} className="team section-bg ">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>Team</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              We've created a great team. Working with these people is a great
+              pleasure.
             </p>
           </div>
 
-          <div className="row">
+          <div className="row d-flex justify-content-center">
             <div className="col-lg-6">
               <div
                 className="member d-flex align-items-start"
@@ -26,24 +25,44 @@ const Team = () => {
                   <img src="img/team/team-1.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
+                  <h4>Saqlain Ashraf</h4>
+                  <span>Web & Mobile App Developer</span>
                   <p>
-                    Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                    Life is dependably going to learn new things and when we
+                    comes to begin another venture.
                   </p>
+
                   <div className="social">
-                    <a href="">
-                      <i className="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          "https://www.facebook.com/profile.php?id=100010000892908",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          " https://instagram.com/mehar_hamad534784?igshid=YmMyMTA2M2Y=",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
-                      <i className="ri-linkedin-box-fill"></i>
-                    </a>
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        (window.location = "mailto:Saqlainashraf493@gmail.com")
+                      }
+                    >
+                      <i className="bx bxl-google"></i>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -58,24 +77,44 @@ const Team = () => {
                   <img src="img/team/team-3.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="member-info">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
+                  <h4>Hamad Ali</h4>
+                  <span>Front-End Developer & Graphic Designer </span>
                   <p>
-                    Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                    Dealing with complex problem as a developer always teach new
+                    things to me.
                   </p>
                   <div className="social">
-                    <a href="">
-                      <i className="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          "https://www.facebook.com/MrHd534784",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
+                    </Link>
+
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          " https://instagram.com/mehar_hamad534784?igshid=YmMyMTA2M2Y=",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
-                      <i className="ri-linkedin-box-fill"></i>
-                    </a>
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        (window.location = "mailto:Hamadali534784@gmail.com")
+                      }
+                    >
+                      <i className="bx bxl-google"></i>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -88,28 +127,61 @@ const Team = () => {
                 data-aos-delay="400"
               >
                 <div className="pic">
-                  <img src="img/team/team-4.jpg" className="img-fluid" alt="" />
+                  <img
+                    src="img/team/team-4.jfif"
+                    className="img-fluid"
+                    alt=""
+                  />
                 </div>
                 <div className="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
+                  <h4>Wajeeh Haider</h4>
+                  <span>Full Stack Developer</span>
                   <p>
-                    Dolorum tempora officiis odit laborum officiis et et
-                    accusamus
+                    I am passionate about building excellent software that
+                    improves the lives of those around me.
                   </p>
                   <div className="social">
-                    <a href="">
-                      <i className="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          "https://www.facebook.com/wajeehhaider.shah/",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          "https://www.instagram.com/syedwajeehshahhaider/",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/in/wajeeh-haider-aa55a520a/",
+                          "_blank"
+                        )
+                      }
+                    >
                       <i className="ri-linkedin-box-fill"></i>
-                    </a>
+                    </Link>
+                    <Link
+                      to=""
+                      onClick={() =>
+                        (window.location = "mailto:Swajeeh03@gmail.com")
+                      }
+                    >
+                      <i className="bx bxl-google"></i>
+                    </Link>
                   </div>
                 </div>
               </div>

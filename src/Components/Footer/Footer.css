@@ -30,6 +30,8 @@
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  outline: none;
+
 }
 #footer .footer-newsletter form input[type="submit"] {
   position: absolute;
@@ -56,33 +58,12 @@
   color: #fff;
 }
 #footer .copyright {
-  float: left;
-}
-#footer .credits {
-  float: right;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  align-self: center;
-}
-#footer .credits a {
-  transition: 0.3s;
-  background: white;
-  padding: 10px;
-  border-radius: 50%;
+text-align: center;
 }
 
 @media (max-width: 768px) {
   #footer .footer-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  #footer .copyright,
-  #footer .credits {
-    text-align: center;
-    float: none;
-  }
-  #footer .credits {
-    padding-top: 4px;
   }
 }

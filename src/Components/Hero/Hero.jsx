@@ -1,7 +1,8 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom"
 
-const Hero = () => {
+const Hero = ({ onScrollForAbout }) => {
   return (
     <>
       <section id="hero" className="d-flex align-items-center py-5">
@@ -12,21 +13,19 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h1>Better Solutions For Your Business</h1>
+              <h1>We Provide Better Solutions For Your Business</h1>
               <h2>
-                We are team of talented designers making websites with Bootstrap
+                We Beleive In Hardword, So We Are Always Ready To Help You To Make Your Bussiness In Better Version .
               </h2>
-              <div className="d-flex justify-content-center justify-content-lg-start">
-                <a href="#about" className="btn-get-started scrollto">
-                  Get Started
-                </a>
-                <a
-                  href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-                  className="glightbox btn-watch-video"
+              <div className="d-flex justify-content-center align-items-center justify-content-lg-start">
+                <Link
+                  to=""
+                  className="btn-get-started scrollto d-flex align-items-center "
+                  onClick={onScrollForAbout}
                 >
-                  <i className="bi bi-play-circle"></i>
-                  <span>Watch Video</span>
-                </a>
+                  Get Started{" "}
+                  <i className="bx bx-right-arrow-alt ms-1 animate__animated animate__flash animate__infinite  animate__slower"></i>
+                </Link>
               </div>
             </div>
             <div

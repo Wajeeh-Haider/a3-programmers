@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({
+  scrollToComponent,
+  onScrollForService,
+  onScrollForTeam,
+  onScrollForAbout,
+}) => {
   const [Nav, setNav] = useState(true);
 
   const buttonClick = () => {
@@ -11,50 +17,69 @@ const Navbar = () => {
     <>
       <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center">
-          {/* <h1 className="logo me-auto">
-            <a href="index.html">Arsha</a>
-          </h1> */}
-          <a  href="index.html" className="logo me-auto"><img src="img/logo.png" alt="" className="img-fluid rounded-circle"/></a>
+          <Link to="/" className="logo me-auto">
+            <img
+              src="img/logo.png"
+              alt=""
+              className="img-fluid rounded-circle"
+            />
+          </Link>
           <nav
             id="navbar"
-            className={`navbar ${Nav === true ? "" : "navbar-mobile position-fixed"} ${
-              Nav === true ? "position-relative" : ""}`}
+            className={`navbar ${
+              Nav === true ? "" : "navbar-mobile position-fixed"
+            } ${Nav === true ? "position-relative" : ""}`}
           >
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
+                <Link className="nav-link scrollto active" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
+                <Link
+                  className="nav-link scrollto"
+                  to=""
+                  onClick={onScrollForAbout}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#services">
+                <Link
+                  className="nav-link scrollto"
+                  to=""
+                  onClick={onScrollForService}
+                >
                   Services
-                </a>
+                </Link>
               </li>
-              {/* <li>
-                <a className="nav-link   scrollto" href="#portfolio">
-                  Portfolio
-                </a>
-              </li> */}
               <li>
-                <a className="nav-link scrollto" href="#team">
+                <Link
+                  className="nav-link scrollto"
+                  to=""
+                  onClick={onScrollForTeam}
+                >
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">
+                <Link
+                  className="nav-link scrollto"
+                  to="/"
+                  onClick={scrollToComponent}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="getstarted scrollto" href="#about">
+                <Link
+                  className="getstarted scrollto"
+                  to=""
+                  onClick={onScrollForAbout}
+                >
                   Get Started
-                </a>
+                </Link>
               </li>
             </ul>
             <i

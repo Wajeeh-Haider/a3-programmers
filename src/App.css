@@ -28,6 +28,8 @@ section {
 
 .section-bg {
   background-color: #f3f5fa;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-title {

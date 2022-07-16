@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./WhyUs.css";
 const WhyUs = () => {
   return (
@@ -8,91 +9,87 @@ const WhyUs = () => {
           <div className="row">
             <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
               <div className="content">
-                <h3>
-                  Eum ipsam laborum deleniti
-                  <strong>velit pariatur architecto aut nihil</strong>
-                </h3>
+                <h3>Why Choose Us</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit
+                  Preparing for your success, we provide truly prominent IT
+                  solutions.
                 </p>
               </div>
 
               <div className="accordion-list">
                 <ul>
                   <li>
-                    <a
+                    <Link
+                    to="/"
                       data-bs-toggle="collapse"
                       className="collapse"
                       data-bs-target="#accordion-list-1"
                     >
-                      <span>01</span> Non consectetur a erat nam at lectus urna
-                      duis? <i className="bx bx-chevron-down icon-show"></i>
+                      WE HAVE SKILLED TEAM
+                      <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
-                    </a>
+                    </Link>
                     <div
                       id="accordion-list-1"
                       className="collapse show"
                       data-bs-parent=".accordion-list"
                     >
                       <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis
-                        urna id volutpat lacus laoreet non curabitur gravida.
-                        Venenatis lectus magna fringilla urna porttitor rhoncus
-                        dolor purus non.
+                        We have highly skilled team with excellent technical
+                        knowledge and experience in using latest software
+                        standards, tools, platforms, frameworks and technologies
+                        and we invest continuously in training and education, to
+                        be able to respond to any new technology challenges and
+                        demands from our clients.
                       </p>
                     </div>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                    to="/"
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-2"
                       className="collapsed"
                     >
-                      <span>02</span> Feugiat scelerisque varius morbi enim
-                      nunc? <i className="bx bx-chevron-down icon-show"></i>
+                      03 YEARS OF IT OUTSOURCING
+                      <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
-                    </a>
+                    </Link>
                     <div
                       id="accordion-list-2"
                       className="collapse"
                       data-bs-parent=".accordion-list"
                     >
                       <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque
-                        habitant morbi. Id interdum velit laoreet id donec
-                        ultrices. Fringilla phasellus faucibus scelerisque
-                        eleifend donec pretium. Est pellentesque elit
-                        ullamcorper dignissim. Mauris ultrices eros in cursus
-                        turpis massa tincidunt dui.
+                        In more than 3 years of IT outsourcing, we have gained
+                        experience in a wide spectrum of technologies,
+                        industries, and application types.
                       </p>
                     </div>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                    to="/"
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-3"
                       className="collapsed"
                     >
-                      <span>03</span> Dolor sit amet consectetur adipiscing
-                      elit? <i className="bx bx-chevron-down icon-show"></i>
+                      WE DELIVER EXCELLENCE
+                      <i className="bx bx-chevron-down icon-show"></i>
                       <i className="bx bx-chevron-up icon-close"></i>
-                    </a>
+                    </Link>
                     <div
                       id="accordion-list-3"
                       className="collapse"
                       data-bs-parent=".accordion-list"
                     >
                       <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam
-                        ultrices sagittis orci. Faucibus pulvinar elementum
-                        integer enim. Sem nulla pharetra diam sit amet nisl
-                        suscipit. Rutrum tellus pellentesque eu tincidunt.
-                        Lectus urna duis convallis convallis tellus. Urna
-                        molestie at elementum eu facilisis sed odio morbi quis
+                        We offer strong and relibe services. We have clients
+                        that have been working with us since the company was
+                        founded. Last but not least, A3 Programmers is one of
+                        the best places for outsourcing.
                       </p>
                     </div>
                   </li>

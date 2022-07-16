@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CTA.css";
 const CTA = () => {
   const cta = {
@@ -20,9 +21,9 @@ const CTA = () => {
               </p>
             </div>
             <div className="col-lg-3 cta-btn-container text-center">
-              <a className="cta-btn align-middle" href="#">
+              <Link className="cta-btn align-middle" to="/">
                 Call To Action
-              </a>
+              </Link>
             </div>
           </div>
         </div>
