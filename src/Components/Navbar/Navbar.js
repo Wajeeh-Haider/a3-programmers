@@ -28,7 +28,8 @@ const Navbar = ({
             id="navbar"
             className={`navbar ${
               Nav === true ? "" : "navbar-mobile position-fixed"
-            } ${Nav === true ? "position-relative" : ""}`}
+              } ${Nav === true ? "position-relative" : ""}`}
+            
           >
             <ul>
               <li>
@@ -39,6 +40,7 @@ const Navbar = ({
               <li>
                 <Link
                   className="nav-link scrollto"
+                  
                   to=""
                   onClick={onScrollForAbout}
                 >
@@ -48,6 +50,7 @@ const Navbar = ({
               <li>
                 <Link
                   className="nav-link scrollto"
+                  
                   to=""
                   onClick={onScrollForService}
                 >
@@ -57,6 +60,7 @@ const Navbar = ({
               <li>
                 <Link
                   className="nav-link scrollto"
+                  
                   to=""
                   onClick={onScrollForTeam}
                 >
@@ -66,6 +70,7 @@ const Navbar = ({
               <li>
                 <Link
                   className="nav-link scrollto"
+                  
                   to="/"
                   onClick={scrollToComponent}
                 >
@@ -75,6 +80,7 @@ const Navbar = ({
               <li>
                 <Link
                   className="getstarted scrollto"
+                  
                   to=""
                   onClick={onScrollForAbout}
                 >

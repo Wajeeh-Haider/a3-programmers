@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Hero = ({ onScrollForAbout }) => {
   return (
@@ -13,9 +13,10 @@ const Hero = ({ onScrollForAbout }) => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h1>We Provide Better Solutions For Your Business</h1>
+              <h1>We Provide Better Solutions For Your Bussiness</h1>
               <h2>
-                We Beleive In Hardword, So We Are Always Ready To Help You To Make Your Bussiness In Better Version .
+                We Beleive In Hardwork, So We Are Always Ready To Help You To
+                Make Your Bussiness In Better Version .
               </h2>
               <div className="d-flex justify-content-center align-items-center justify-content-lg-start">
                 <Link
@@ -23,7 +24,7 @@ const Hero = ({ onScrollForAbout }) => {
                   className="btn-get-started scrollto d-flex align-items-center "
                   onClick={onScrollForAbout}
                 >
-                  Get Started{" "}
+                  Get Started
                   <i className="bx bx-right-arrow-alt ms-1 animate__animated animate__flash animate__infinite  animate__slower"></i>
                 </Link>
               </div>

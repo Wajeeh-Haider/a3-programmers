@@ -41,10 +41,10 @@ const serviceData = [
   },
   {
     id: 6,
-    icon: "bi bi-clipboard2-data",
-    title: "QA Testing Service",
+    icon: "bx bxl-python",
+    title: "AI Networking",
     description:
-      "Our pro-level testers provide extraordinary on-demand, scalable and flexible Quality Assurance and Testing solutions to clients on various devices.",
+      "With real AI, your network becomes easier to operate. You can quickly configure, troubleshoot, and protect your network while minimizing errors. And when you can fix problems before they impact users, you’re delivering a next-level experience.",
     dataDelay: 600,
   },
 ];
