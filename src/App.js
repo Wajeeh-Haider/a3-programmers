@@ -4,8 +4,6 @@ import Home from "./Pages/Home";
 import ScrollToTop from "react-scroll-to-top";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
-import "bootstrap-icons/font/bootstrap-icons.css";
 import "remixicon/fonts/remixicon.css";
 import "boxicons/css/boxicons.min.css";
 import AOS from "aos";
