@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import "animate.css";
+import WhatsappChat from "./Components/WhatsappChat/WhatsappChat";
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -20,6 +21,7 @@ const App = () => {
   };
   return (
     <>
+      <WhatsappChat />
       <ScrollToTop smooth style={scrollToTop} color="white" />
       <Routes>
         <Route path="/" element={<Home />} />
